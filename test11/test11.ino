@@ -32,7 +32,7 @@ void setup() {
   display.setTextSize(1);
   display.setTextColor(SSD1306_WHITE);
   display.setCursor(0, 0);
-  display.print("LoRa Receiver Initialized");
+  display.print("waiting for data from lora-1");
   display.display();
   delay(2000);  // Wait for the OLED to display the message
 }
