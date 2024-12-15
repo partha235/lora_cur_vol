@@ -1,0 +1,14 @@
+from machine import Pin
+from utime import sleep_ms
+x=Pin(14,Pin.IN)
+y=Pin(12,Pin.OUT)
+
+while True:
+    y.value(1)
+    sleep_ms(100)
+    print("x_0 = ",x.value())
+    sleep_ms(500)
+    y.value(0)
+    sleep_ms(100)
+    print("x_1 = ",x.value())
+    sleep_ms(500)
